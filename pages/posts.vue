@@ -18,14 +18,14 @@
   <script setup lang="ts">
   import { usePostsStore } from '~/stores/posts'
   import PostCard from '~/components/PostCard.vue'
-  import { onMounted } from 'vue'
   
+  // Use Pinia store
   const store = usePostsStore()
   
-  onMounted(() => {
-    store.fetchPosts()
-  })
+  // Ensure posts are fetched before rendering (SSR-compatible)
+  await useAsyncData('posts', () => store.fetchPosts())
   
+  // Get the posts from the store
   const posts = store.posts
   </script>
   
