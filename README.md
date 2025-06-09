@@ -1,6 +1,24 @@
-# Nuxt Minimal Starter
+# Nuxt Posts App
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This project is a technical test for the Nuxt.js Developer position at Webreinvent Technology.
+
+## Features
+
+-  Nuxt 3 with TypeScript support
+-  Pinia for state management
+-  Tailwind CSS for styling
+-  Fetches post list from DummyJSON API
+-  Reusable `PostCard` component
+-  Dynamic routing for post detail pages
+-  15-minute cache using `useState` and timestamp
+-  Git history with multiple commits
+
+## Installation
+
+```bash
+npm install
+npm run dev
+
 
 ## Setup
 
