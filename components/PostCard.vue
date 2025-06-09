@@ -1,7 +1,7 @@
 <template>
-    <div class="border p-4 rounded shadow hover:shadow-lg transition cursor-pointer">
-      <h2 class="text-xl font-bold mb-2">{{ post.title }}</h2>
-      <p class="text-gray-700">{{ post.body.slice(0, 100) }}...</p>
+    <div class="border rounded-lg p-4 bg-white shadow hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
+      <h2 class="text-xl font-semibold mb-2 line-clamp-2">{{ post.title }}</h2>
+      <p class="text-gray-600 flex-grow line-clamp-3">{{ post.body.slice(0, 100) }}...</p>
     </div>
   </template>
   
